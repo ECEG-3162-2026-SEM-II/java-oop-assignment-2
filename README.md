@@ -35,6 +35,7 @@ A specialized account that grows over time.
     * You **must** call `super(accountHolder, initialBalance)` as the first line.
 * **New Method**: 
     * `public void applyInterest()`: Calculates interest ($Balance \times interestRate$) and adds that amount to the current balance.
+    * **Pro-Tip**: Reuse `this.deposit()` or `super.deposit()` to add the interest amount.
 
 ### Step 3: The Overriding Logic (`CheckingAccount.java`)
 A daily-use account that charges a fee for every withdrawal.
